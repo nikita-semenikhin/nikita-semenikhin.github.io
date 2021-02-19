@@ -1,0 +1,520 @@
+.material .code { max-height: 80vh; overflow: auto; margin-bottom: 1rem; }
+
+code { font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; background-color: #f2f4f6; color: black; display: inline-block; font-size: 1rem; padding: 2px 5px; word-break: break-all; /*& + code { margin-left: -5px; padding-left: 0; }*/ }
+
+code > .type, code > .Type { color: #008080; text-decoration-color: #b6d7d9; }
+
+code > .type:hover, code > .Type:hover { text-decoration-color: #008080; }
+
+code > .namespace, code > .Namespace { color: #888; text-decoration-color: #d8d9db; }
+
+code > .namespace:hover, code > .Namespace:hover { text-decoration-color: #888; }
+
+code > .method, code > .Method { color: #74531f; text-decoration-color: #d3ccc0; /*&:last-child{ &:after{ content:"()"; } }*/ }
+
+code > .method:hover, code > .Method:hover { text-decoration-color: #74531f; }
+
+.code .xmlDocComment, .code .htmlComment, .code .comment { color: #008000; }
+
+.code .keyword { color: #0000ff; }
+
+.code .preprocessorKeyword { color: darkgray; }
+
+.code .string, .code .htmlElementName, .code .stringCSharpVerbatim { color: #a31515; }
+
+.code .className { color: #48D1CC; }
+
+.code .number { color: #8b6122; }
+
+.code .htmlServerSideScript { color: #FFFF00; }
+
+.code .htmlTagDelimiter { color: #0000FF; }
+
+.code .htmlElementName { color: #A31515; }
+
+.code .htmlAttributeName { color: #FF0000; }
+
+.code .htmlAttributeValue { color: #0000FF; }
+
+.code .htmlOperator { color: #0000FF; }
+
+.code .xmlDocTag { color: #808080; }
+
+.code .htmlEntity { color: #FF0000; }
+
+.code .xmlAttribute { color: #FF0000; }
+
+.code .xmlAttributeQuotes { color: #000000; }
+
+.code .xmlAttributeValue { color: #0000FF; }
+
+.code .xmlCDataSection { color: #808080; }
+
+.code .xmlComment { color: #008000; }
+
+.code .xmlDelimiter { color: #0000FF; }
+
+.code .xmlName { color: #A31515; }
+
+.code .cssSelector { color: #A31515; }
+
+.code .cssPropertyName { color: #FF0000; }
+
+.code .cssPropertyValue { color: #0000FF; }
+
+.code .sqlSystemFunction { color: #FF00FF; }
+
+.code .powershellAttribute { color: #B0E0E6; }
+
+.code .powershellOperator { color: #808080; }
+
+.code .powershellType { color: #008080; }
+
+.code .powershellVariable { color: #FF4500; }
+
+.code .typeVariable { color: #008080; font-style: italic; }
+
+.code .constructor { color: #800080; }
+
+.code .predefined { color: #000080; }
+
+.code .pseudoKeyword { color: #000080; }
+
+.code .stringEscape { color: #808080; }
+
+.code .controlKeyword { color: #0000FF; }
+
+.code .markdownHeader { color: #0000FF; font-weight: bold; }
+
+.code .markdownCode { color: #008080; }
+
+.code .markdownListItem { font-weight: bold; }
+
+.code .italic { font-style: italic; }
+
+.code .bold { font-weight: bold; }
+
+.code .builtinFunction { color: #6B8E23; font-weight: bold; }
+
+.code .builtinValue { color: #556B2F; font-weight: bold; }
+
+.code .attribute { color: #008B8B; font-style: italic; }
+
+.code > pre { font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; background-color: #f2f4f6; color: black; padding: 8px; overflow: auto; font-size: 1rem; border-radius: 2px; font-weight: 200; }
+
+.code > pre > .type, .code > pre > .Type { color: #008080; text-decoration-color: #b6d7d9; }
+
+.code > pre > .type:hover, .code > pre > .Type:hover { text-decoration-color: #008080; }
+
+.code > pre > .namespace, .code > pre > .Namespace { color: #888; text-decoration-color: #d8d9db; }
+
+.code > pre > .namespace:hover, .code > pre > .Namespace:hover { text-decoration-color: #888; }
+
+.code > pre > .method, .code > pre > .Method { color: #74531f; text-decoration-color: #d3ccc0; /*&:last-child{ &:after{ content:"()"; } }*/ }
+
+.code > pre > .method:hover, .code > pre > .Method:hover { text-decoration-color: #74531f; }
+
+/*.GitHubLink { text-decoration: none; float: left; } .GitHubLink::after { color: #666; position: absolute; font-family: "Material Design Icons"; font-size: 1.7rem; content: "\F02A4"; margin-left: -1.2em; } @media only screen and (max-width: 880px) { .GitHubLink { float: right; } .GitHubLink::after { position: relative; float: right; margin-left: 0; } }*/
+.anchorsOutside .GitHubLink { text-decoration: none; float: left; }
+
+.anchorsOutside .GitHubLink:after { color: #666; font-family: "Material Design Icons"; font-size: 1.7rem; content: "\F02A4"; }
+
+.anchorsOutside .GitHubLink:after { position: absolute; float: left; margin-left: -1.2em; }
+
+.anchorsInside .GitHubLink { text-decoration: none; float: right; }
+
+.anchorsInside .GitHubLink:after { color: #666; font-family: "Material Design Icons"; font-size: 1.7rem; content: "\F02A4"; }
+
+.anchorsInside .GitHubLink:after { opacity: 0.5; position: absolute; float: right; font-size: 2.5rem; margin-left: -2.5rem; }
+
+.anchorsInside .GitHubLink ~ .code > pre { border-top-right-radius: 1.25rem; }
+
+.Downloadable { left: 0; right: 0; background-color: #f7f7f7; display: flex; flex-wrap: wrap; flex-direction: row; padding: 4px 0 0 4px; border-radius: 2px; margin-bottom: 1rem; /*font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif; font-weight: normal; -webkit-font-smoothing: antialiased; box-sizing: inherit; box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2); border: none; border-radius: 2px; height: 36px; line-height: 36px; padding: 0 16px; font-size: 14px; outline: 0; text-decoration: none; color: #fff; background-color: #acc435; text-align: center; letter-spacing: .5px; position: relative; cursor: pointer; display: inline-block; overflow: hidden; user-select: none; -webkit-tap-highlight-color: transparent; vertical-align: middle; z-index: 1; transition: .3s ease-out;*/ }
+
+.Downloadable > * { display: flex; height: 48px; justify-content: center; text-align: center; padding: 0px 16px 0px 16px; font: inherit; margin: 0 4px 4px 0; flex: 10; }
+
+.Downloadable > .Title { display: flex; flex-direction: column; white-space: nowrap; }
+
+.Downloadable > .Select { display: flex; font: inherit; border: 1px solid #ddd; }
+
+.Downloadable > .Button { display: flex; flex-direction: column; flex: 1; text-decoration: none; font-weight: 500; color: black !important; border-radius: 2px; background-color: #acc435; }
+
+.Downloadable > .Button:hover { background-color: #bed25a; }
+
+.DownloadableIcon { color: #ffffff; text-align: center; cursor: pointer; user-select: none; -webkit-tap-highlight-color: transparent; box-sizing: inherit; float: left !important; text-rendering: optimizeLegibility; font-family: 'Material Design Icons'; font-weight: normal; font-style: normal; letter-spacing: normal; text-transform: none; display: inline-block; white-space: nowrap; word-wrap: normal; direction: ltr; -webkit-font-smoothing: antialiased; margin-right: 15px; font-size: 1.3rem; line-height: inherit; }
+
+.DownloadableIconWindows::before { content: "\F05B3"; }
+
+.DownloadableIconAndroid::before { content: "\F0032"; }
+
+.DownloadableIconLinux::before { content: "\F033D"; }
+
+.DownloadableIconZip::before { content: "\F06EB"; }
+
+.DownloadableIconCloud::before { content: "\F0162"; }
+
+.Footer { position: relative; display: block; background-color: #f2f4f6; }
+
+.Footer:before { position: absolute; display: block; background-color: inherit; content: ""; height: 100%; width: 100vw; left: 0; z-index: -1; margin-left: -6vw; }
+
+.FooterContainer { padding-top: 32px; margin-left: 9vw; text-align: left; }
+
+.FooterContainer .Section .Title { display: block; font-size: 16px; margin-bottom: 12px; font-weight: bold; }
+
+.FooterContainer a { color: #848d95; font-size: 16px; padding: 4px 0; line-height: 1.4em; display: inline-block; text-decoration: none; }
+
+.FooterContainer a:hover { color: #bbc0c4; }
+
+.FooterContainer > .Text { color: #3d5154; font-size: 16px; display: table; }
+
+.Grid { display: grid; grid-column-gap: 8px; grid-row-gap: 8px; }
+
+.List { margin-left: 20px; }
+
+.MaterialCard { visibility: hidden; position: relative; width: 100%; display: inline-block; height: 200px; border-radius: 3px; overflow: hidden; text-decoration: none; font-family: "Roboto"; font-weight: 500; }
+
+.MaterialCard .Title, .MaterialCard .Text { top: 0; font-size: 20px; text-align: left; background-color: rgba(27, 30, 35, 0.7); position: inherit; width: 100%; }
+
+.MaterialCard.MouseOver > .MaterialCardSlider { transform: translateY(0); }
+
+.MaterialCard > .MaterialCardSlider { -webkit-transition: 0.3s; -moz-transition: 0.3s; -o-transition: 0.3s; transition: 0.3s; position: absolute; bottom: 0; width: 100%; transform: translateY(100%); }
+
+.MaterialCard > .MaterialCardSlider > .Title { position: absolute; padding: 6px 16px; transform: translateY(-100%); color: #f2f4f6; line-height: 1.3em; align-items: center; font-size: 16px; font-weight: 500; }
+
+.MaterialCard > .MaterialCardSlider .Text { padding: none; background-color: transparent; font-size: 16px; line-height: 1.3em; position: static; height: 100%; color: #D4D8DF; font-weight: 400; }
+
+.MaterialCard > .MaterialCardSlider > .Text { padding: 0 16px 3px 16px; padding-bottom: 12px; background-color: rgba(27, 30, 35, 0.7); }
+
+.MaterialCard > .RiseUpContent { background-color: rgba(27, 30, 35, 0.7); position: absolute; top: 0; height: 100%; width: 100%; color: inherit; }
+
+.MaterialCard > .Image { width: 100%; height: 200px; }
+
+.MaterialCard.Mobile > .Text { visibility: hidden; }
+
+.MaterialCard.Mobile.MouseOver .Title, .MaterialCard.Mobile.MouseOver > .Text { transform: translateY(-100%); top: 0; }
+
+.List .Panel { margin-bottom: 0; }
+
+.Panel { position: relative; border-radius: 2px; padding: 10px; margin-bottom: 1rem; font-size: inherit; min-height: 28px; display: flex; justify-content: flex-start; }
+
+.Panel::before { display: block; margin-right: 10px; font-size: 24px; line-height: 24px; font-family: "Material Design Icons"; content: "\F0339"; color: #ccc; }
+
+.Info { background-color: #deebff; }
+
+.Info::before { color: #5883cc; content: "\F02FC"; }
+
+.Warning { background-color: #fffae6; }
+
+.Warning::before { color: #ff991f; content: "\F0026"; }
+
+.Error { background-color: #ffebe6; }
+
+.Error::before { color: #d4081d; content: "\F0159"; }
+
+.Note { background-color: #eae6ff; }
+
+.Note::before { color: #5243aa; content: "\F082E"; }
+
+.Success { background-color: #e6edc2; }
+
+.Success::before { color: #acc435; content: "\F05E0"; }
+
+.Bug { background-color: #f4dfd9; }
+
+.Bug::before { color: #d4081d; content: "\F00E4"; }
+
+table { width: 100%; border-collapse: collapse; margin-bottom: 0.4rem; border-spacing: 0px; border: 0; }
+
+table > tbody th { border: 1px solid white; background-color: #eee; padding: 4px 10px 4px 10px; color: #666; font-weight: 500; }
+
+table > tbody td { border: 1px solid #ddd; border-width: 1px; padding: 4px 10px 4px 10px; }
+
+table > tbody td:empty { border: 1px solid transparent; }
+
+.ToDo { display: inline-block; position: relative; background-color: red; color: white; padding: 0 5px 0 5px; border-radius: 5px; }
+
+.ToDo:empty { width: 1px; height: 1em; padding: 0; }
+
+.ToDo:empty:after { position: absolute; display: block; left: -10px; top: 100%; width: 20px; line-height: 20px; border-radius: 10px; background-color: red; text-align: center; vertical-align: central; font-size: 16px; font-family: "Material Design Icons"; content: "\F02A0"; }
+
+.VideoPlayer { position: relative; max-height: 80vh; overflow: hidden; background-color: black; margin-bottom: 1.5vh; margin-top: 1.5vh; z-index: 2; }
+
+.VideoPlayer > img { width: 100%; height: auto; position: relative; overflow: hidden; z-index: -1; }
+
+.VideoPlayer .VideoPlayerInner { position: absolute; top: 50%; transform: translateY(-50%); width: 100%; }
+
+.LanguageMenu { display: none; position: absolute; width: 45px; padding-top: 7.5px; margin: 0; right: 0; top: 0; z-index: 10; visibility: hidden; flex-direction: column; justify-content: flex-start; transition: 0.5s; }
+
+.LanguageMenu .Text { background-color: #959CA6; color: #f2f4f6; text-decoration: none; font-weight: 400; text-align: center; font-size: 0.7rem; width: 30px; height: 30px; border-radius: 50%; flex-grow: 0; flex-shrink: 0; order: 1; display: flex; align-items: center; justify-content: center; margin: 7.5px; margin-bottom: -37.5px; position: relative; transition: margin-bottom 0.5s, background-color 0.2s, opacity 0.2s; }
+
+.LanguageMenu .Text.MouseOver { background-color: #525966; }
+
+.LanguageMenu .Text.Selected { background-color: #ACC435; order: 0; margin-top: 0; }
+
+.LanguageMenu .Text::before { position: absolute; width: 45px; height: 45px; border-radius: 50%; content: ''; background-color: transparent; }
+
+.LanguageMenu.MouseOver .Text { margin-bottom: 7.5px; }
+
+.LanguageSideMenuWrapper .LanguageSideMenu a.Text, .LanguageSideMenuWrapper .LanguageSideMenu > .Before::before, .Minimal > .SideComponent .Tongue, .Minimal > .LanguageSideMenuWrapper .Tongue, .Minimal > .SideMenuWrapper .Tongue { display: flex; justify-content: center; align-items: center; }
+
+.SideComponent, .LanguageSideMenuWrapper, .SideMenuWrapper { z-index: 0; flex-shrink: 0; }
+
+.SideComponent .Glass, .LanguageSideMenuWrapper .Glass, .SideMenuWrapper .Glass { visibility: hidden; }
+
+.SideComponent .SideContent, .LanguageSideMenuWrapper .SideContent, .SideMenuWrapper .SideContent { background-color: #3b424d; transform: none; height: 100%; }
+
+.SideComponent .Tongue, .LanguageSideMenuWrapper .Tongue, .SideMenuWrapper .Tongue { display: none; background-color: black; width: 40px; height: 40px; border-radius: 50%; transition: width .1s, height .1s, border-radius .1s, margin-top .1s, margin-left .1s, height .1s; }
+
+.SideComponent .Tongue.Pinned, .LanguageSideMenuWrapper .Tongue.Pinned, .SideMenuWrapper .Tongue.Pinned { width: 16px; border-radius: 8px; height: 160px; overflow: hidden; }
+
+.SideComponent.Forward, .Forward.LanguageSideMenuWrapper, .Forward.SideMenuWrapper { z-index: 100; }
+
+.SideComponent.Modal .Glass, .Modal.LanguageSideMenuWrapper .Glass, .Modal.SideMenuWrapper .Glass { position: fixed; width: 100vw; height: 100vh; background-color: rgba(133, 133, 133, 0.8); top: 0; visibility: visible; }
+
+.Minimal > .SideComponent, .Minimal > .LanguageSideMenuWrapper, .Minimal > .SideMenuWrapper { height: 40px; margin-top: 10px; position: relative; }
+
+.Minimal > .SideComponent > .Glass, .Minimal > .LanguageSideMenuWrapper > .Glass, .Minimal > .SideMenuWrapper > .Glass { top: -10px; }
+
+.Minimal > .SideComponent .SideContent, .Minimal > .LanguageSideMenuWrapper .SideContent, .Minimal > .SideMenuWrapper .SideContent { top: -10px; position: absolute; }
+
+.Minimal > .SideComponent .Tongue, .Minimal > .LanguageSideMenuWrapper .Tongue, .Minimal > .SideMenuWrapper .Tongue { position: absolute; top: 0; }
+
+.Minimal > .SideComponent.Active:not(.Pinned), .Minimal > .Active.LanguageSideMenuWrapper:not(.Pinned), .Minimal > .Active.SideMenuWrapper:not(.Pinned) { position: absolute; }
+
+.Minimal > .SideComponent.Pinned, .Minimal > .Pinned.LanguageSideMenuWrapper, .Minimal > .Pinned.SideMenuWrapper { height: 160px; margin-top: 40px; }
+
+.Minimal > .SideComponent.Pinned > .Glass, .Minimal > .Pinned.LanguageSideMenuWrapper > .Glass, .Minimal > .Pinned.SideMenuWrapper > .Glass { top: -40px; }
+
+.Minimal > .SideComponent.Pinned .SideContent, .Minimal > .Pinned.LanguageSideMenuWrapper .SideContent, .Minimal > .Pinned.SideMenuWrapper .SideContent { min-height: 160px; top: -40px; overflow-y: scroll; }
+
+.LeftSideContainer.Minimal .SideComponent > .Glass, .LeftSideContainer.Minimal .LanguageSideMenuWrapper > .Glass, .LeftSideContainer.Minimal .SideMenuWrapper > .Glass { left: 0; }
+
+.LeftSideContainer.Minimal .SideComponent .SideContent, .LeftSideContainer.Minimal .LanguageSideMenuWrapper .SideContent, .LeftSideContainer.Minimal .SideMenuWrapper .SideContent { left: 0; transform: translateX(-100%); }
+
+.LeftSideContainer.Minimal .SideComponent .Tongue, .LeftSideContainer.Minimal .LanguageSideMenuWrapper .Tongue, .LeftSideContainer.Minimal .SideMenuWrapper .Tongue { margin-left: 10px; left: 0; }
+
+.LeftSideContainer.Minimal .SideComponent .Tongue.Pinned, .LeftSideContainer.Minimal .LanguageSideMenuWrapper .Tongue.Pinned, .LeftSideContainer.Minimal .SideMenuWrapper .Tongue.Pinned { margin-left: -8px; }
+
+.RightSideContainer.Minimal .SideComponent > .Glass, .RightSideContainer.Minimal .LanguageSideMenuWrapper > .Glass, .RightSideContainer.Minimal .SideMenuWrapper > .Glass { right: 0; }
+
+.RightSideContainer.Minimal .SideComponent .SideContent, .RightSideContainer.Minimal .LanguageSideMenuWrapper .SideContent, .RightSideContainer.Minimal .SideMenuWrapper .SideContent { right: 0; transform: translateX(100%); }
+
+.RightSideContainer.Minimal .SideComponent .Tongue, .RightSideContainer.Minimal .LanguageSideMenuWrapper .Tongue, .RightSideContainer.Minimal .SideMenuWrapper .Tongue { margin-right: 10px; right: 0; }
+
+.RightSideContainer.Minimal .SideComponent .Tongue.Pinned, .RightSideContainer.Minimal .LanguageSideMenuWrapper .Tongue.Pinned, .RightSideContainer.Minimal .SideMenuWrapper .Tongue.Pinned { margin-right: -8px; }
+
+.SideMenuWrapper .SideMenu { background-color: white; border-right: 1px solid #ddd; width: 260px; }
+
+.SideMenuWrapper .SideMenu > * { display: block; color: inherit; font-weight: 400; text-decoration: none; padding: 16px 28px; }
+
+.SideMenuWrapper .SideMenu > .Separator { padding: 0; height: 0; width: 100%; border-bottom: 2px solid #414853; }
+
+.SideMenuWrapper .TongueMenu::after { content: "\F035C"; color: white; font-family: "Material Design Icons"; font-size: 32px; transition: font-size .05s .05s, color .05s .05s; }
+
+.SideMenuWrapper .TongueMenu.Pinned::after { font-size: 8px; color: transparent; transition: color .05s, font-size .05s; }
+
+.Minimal .SideMenuWrapper .SideMenu { height: 100vh; }
+
+.LanguageSideMenuWrapper .LanguageSideMenu a.Text, .LanguageSideMenuWrapper .LanguageSideMenu > .Before::before, .Minimal > .SideComponent .Tongue, .Minimal > .LanguageSideMenuWrapper .Tongue, .Minimal > .SideMenuWrapper .Tongue { display: flex; justify-content: center; align-items: center; }
+
+.SideComponent, .LanguageSideMenuWrapper, .SideMenuWrapper { z-index: 0; flex-shrink: 0; }
+
+.SideComponent .Glass, .LanguageSideMenuWrapper .Glass, .SideMenuWrapper .Glass { visibility: hidden; }
+
+.SideComponent .SideContent, .LanguageSideMenuWrapper .SideContent, .SideMenuWrapper .SideContent { background-color: #3b424d; transform: none; height: 100%; }
+
+.SideComponent .Tongue, .LanguageSideMenuWrapper .Tongue, .SideMenuWrapper .Tongue { display: none; background-color: black; width: 40px; height: 40px; border-radius: 50%; transition: width .1s, height .1s, border-radius .1s, margin-top .1s, margin-left .1s, height .1s; }
+
+.SideComponent .Tongue.Pinned, .LanguageSideMenuWrapper .Tongue.Pinned, .SideMenuWrapper .Tongue.Pinned { width: 16px; border-radius: 8px; height: 160px; overflow: hidden; }
+
+.SideComponent.Forward, .Forward.LanguageSideMenuWrapper, .Forward.SideMenuWrapper { z-index: 100; }
+
+.SideComponent.Modal .Glass, .Modal.LanguageSideMenuWrapper .Glass, .Modal.SideMenuWrapper .Glass { position: fixed; width: 100vw; height: 100vh; background-color: rgba(133, 133, 133, 0.8); top: 0; visibility: visible; }
+
+.Minimal > .SideComponent, .Minimal > .LanguageSideMenuWrapper, .Minimal > .SideMenuWrapper { height: 40px; margin-top: 10px; position: relative; }
+
+.Minimal > .SideComponent > .Glass, .Minimal > .LanguageSideMenuWrapper > .Glass, .Minimal > .SideMenuWrapper > .Glass { top: -10px; }
+
+.Minimal > .SideComponent .SideContent, .Minimal > .LanguageSideMenuWrapper .SideContent, .Minimal > .SideMenuWrapper .SideContent { top: -10px; position: absolute; }
+
+.Minimal > .SideComponent .Tongue, .Minimal > .LanguageSideMenuWrapper .Tongue, .Minimal > .SideMenuWrapper .Tongue { position: absolute; top: 0; }
+
+.Minimal > .SideComponent.Active:not(.Pinned), .Minimal > .Active.LanguageSideMenuWrapper:not(.Pinned), .Minimal > .Active.SideMenuWrapper:not(.Pinned) { position: absolute; }
+
+.Minimal > .SideComponent.Pinned, .Minimal > .Pinned.LanguageSideMenuWrapper, .Minimal > .Pinned.SideMenuWrapper { height: 160px; margin-top: 40px; }
+
+.Minimal > .SideComponent.Pinned > .Glass, .Minimal > .Pinned.LanguageSideMenuWrapper > .Glass, .Minimal > .Pinned.SideMenuWrapper > .Glass { top: -40px; }
+
+.Minimal > .SideComponent.Pinned .SideContent, .Minimal > .Pinned.LanguageSideMenuWrapper .SideContent, .Minimal > .Pinned.SideMenuWrapper .SideContent { min-height: 160px; top: -40px; overflow-y: scroll; }
+
+.LeftSideContainer.Minimal .SideComponent > .Glass, .LeftSideContainer.Minimal .LanguageSideMenuWrapper > .Glass, .LeftSideContainer.Minimal .SideMenuWrapper > .Glass { left: 0; }
+
+.LeftSideContainer.Minimal .SideComponent .SideContent, .LeftSideContainer.Minimal .LanguageSideMenuWrapper .SideContent, .LeftSideContainer.Minimal .SideMenuWrapper .SideContent { left: 0; transform: translateX(-100%); }
+
+.LeftSideContainer.Minimal .SideComponent .Tongue, .LeftSideContainer.Minimal .LanguageSideMenuWrapper .Tongue, .LeftSideContainer.Minimal .SideMenuWrapper .Tongue { margin-left: 10px; left: 0; }
+
+.LeftSideContainer.Minimal .SideComponent .Tongue.Pinned, .LeftSideContainer.Minimal .LanguageSideMenuWrapper .Tongue.Pinned, .LeftSideContainer.Minimal .SideMenuWrapper .Tongue.Pinned { margin-left: -8px; }
+
+.RightSideContainer.Minimal .SideComponent > .Glass, .RightSideContainer.Minimal .LanguageSideMenuWrapper > .Glass, .RightSideContainer.Minimal .SideMenuWrapper > .Glass { right: 0; }
+
+.RightSideContainer.Minimal .SideComponent .SideContent, .RightSideContainer.Minimal .LanguageSideMenuWrapper .SideContent, .RightSideContainer.Minimal .SideMenuWrapper .SideContent { right: 0; transform: translateX(100%); }
+
+.RightSideContainer.Minimal .SideComponent .Tongue, .RightSideContainer.Minimal .LanguageSideMenuWrapper .Tongue, .RightSideContainer.Minimal .SideMenuWrapper .Tongue { margin-right: 10px; right: 0; }
+
+.RightSideContainer.Minimal .SideComponent .Tongue.Pinned, .RightSideContainer.Minimal .LanguageSideMenuWrapper .Tongue.Pinned, .RightSideContainer.Minimal .SideMenuWrapper .Tongue.Pinned { margin-right: -8px; }
+
+.LanguageSideMenuWrapper .LanguageSideMenu a.Text, .LanguageSideMenuWrapper .LanguageSideMenu > .Before::before { width: 100%; height: 40px; width: 40px; color: white; font-size: 1rem; }
+
+.LanguageSideMenuWrapper .LanguageSideMenu > .Before::before, .LanguageSideMenuWrapper .Tongue::after { content: "\F05CA"; font-family: "Material Design Icons"; font-size: 28px; }
+
+.LanguageSideMenuWrapper .Tongue::after { color: white; }
+
+.LanguageSideMenuWrapper .Tongue.Pinned::after { font-size: 8px; color: transparent; transition: color .05s, font-size .05s; }
+
+.LanguageSideMenuWrapper .LanguageSideMenu { width: 60px; display: flex; flex-direction: column; align-items: center; padding-top: 10px; padding-bottom: 10px; }
+
+.LanguageSideMenuWrapper .LanguageSideMenu > .Before::before { order: 0; }
+
+.LanguageSideMenuWrapper .LanguageSideMenu a.Text { order: 1; text-decoration: none; }
+
+.LanguageSideMenuWrapper .LanguageSideMenu a.Text.Selected { order: 1; color: black; }
+
+.Minimal > .LanguageSideMenuWrapper.Unpinned .LanguageSideMenu { height: 100vh; }
+
+.Minimal > .LanguageSideMenuWrapper.Pinned .LanguageSideMenu { height: auto; padding: 0; padding-top: 50px; justify-content: space-evenly; top: 0; }
+
+.Minimal > .LanguageSideMenuWrapper.Pinned .LanguageSideMenu > .Before { position: absolute; top: 10px; }
+
+.TemplateLeftSideMenu .RightSideContainer, .TemplateLanding .RightSideContainer, .TemplateRegularMaterial .RightSideContainer, .TemplateLeftSideMenu .LeftSideContainer, .TemplateLanding .LeftSideContainer, .TemplateRegularMaterial .LeftSideContainer { display: flex; flex-direction: column; position: fixed; top: 0; height: 100vh; z-index: 1000; background-color: #3b424d; }
+
+.TemplateLeftSideMenu .Forward.RightSideContainer, .TemplateLanding .Forward.RightSideContainer, .TemplateRegularMaterial .Forward.RightSideContainer, .TemplateLeftSideMenu .Forward.LeftSideContainer, .TemplateLanding .Forward.LeftSideContainer, .TemplateRegularMaterial .Forward.LeftSideContainer { z-index: 1100; }
+
+.TemplateLeftSideMenu .RightSideContainer > div, .TemplateLanding .RightSideContainer > div, .TemplateRegularMaterial .RightSideContainer > div, .TemplateLeftSideMenu .LeftSideContainer > div, .TemplateLanding .LeftSideContainer > div, .TemplateRegularMaterial .LeftSideContainer > div { border-bottom: 2px solid #1B1E23; }
+
+.TemplateLeftSideMenu .RightSideContainer > div:last-child, .TemplateLanding .RightSideContainer > div:last-child, .TemplateRegularMaterial .RightSideContainer > div:last-child, .TemplateLeftSideMenu .LeftSideContainer > div:last-child, .TemplateLanding .LeftSideContainer > div:last-child, .TemplateRegularMaterial .LeftSideContainer > div:last-child { border-bottom: none; }
+
+.TemplateLeftSideMenu .LeftSideContainer, .TemplateLanding .LeftSideContainer, .TemplateRegularMaterial .LeftSideContainer { left: 0; }
+
+.TemplateLeftSideMenu .RightSideContainer, .TemplateLanding .RightSideContainer, .TemplateRegularMaterial .RightSideContainer { right: 0; }
+
+.TemplateRegularMaterial .Footer { background-color: #f7f7f7; }
+
+.TemplateRegularMaterial .List { margin-bottom: 1rem; margin-left: 0; list-style-type: none; }
+
+.TemplateRegularMaterial .List > li > .Text { margin-bottom: 4px; position: relative; }
+
+.TemplateRegularMaterial .List > li > .Text::before { content: "\2022"; font-size: 19px; position: absolute; color: #3b424d; left: -11px; text-decoration: none; }
+
+@media (max-width: 816px) { .TemplateRegularMaterial .List > li > .Text::before { left: -12; } }
+
+@media (max-width: 816px) { .TemplateRegularMaterial .List > li > .Text { margin-left: 18px; } }
+
+.TemplateRegularMaterial .List > li .List { margin-left: 20px; }
+
+.TemplateRegularMaterial .List > li .List > li > .Text::before { color: #959ca6; }
+
+.TemplateRegularMaterial .List > li .List .List > li > .Text::before { color: #D4D8DF; }
+
+.TemplateRegularMaterial > .Content { min-width: 320px; margin: 0 auto 0 auto; flex: 1 0 auto; font-weight: 400; font-size: 1rem; color: #3b424d; line-height: 1.6; letter-spacing: 0.01em; /*> *, .Section > * { margin-top: 0.4rem; }*/ /*> *:not(:last-child), .section>*:not(:last-child) { margin-bottom: 0.4rem; } :not(:last-child)[style*="display:flex"] { margin-bottom: 0.4rem; }*/ }
+
+.TemplateRegularMaterial > .Content > .Text { margin-bottom: 1rem; padding: 0 8px; }
+
+.TemplateRegularMaterial > .Content > .Section > .Text { margin-bottom: 1rem; }
+
+.TemplateRegularMaterial > .Content.anchorsOutside .Section > .Title > .Link { text-decoration: none; float: left; }
+
+.TemplateRegularMaterial > .Content.anchorsOutside .Section > .Title > .Link:after { color: #D4D8DF; font-family: "Material Design Icons"; content: "\F0339"; }
+
+@media (max-width: 892px) { .TemplateRegularMaterial > .Content.anchorsOutside .Section > .Title > .Link { float: right; } }
+
+.TemplateRegularMaterial > .Content.anchorsOutside .Section > .Title > .Link:after { position: absolute; float: left; margin-left: -1.2em; }
+
+@media (max-width: 892px) { .TemplateRegularMaterial > .Content.anchorsOutside .Section > .Title > .Link:after { position: relative; float: right; margin-left: 0; } }
+
+.TemplateRegularMaterial > .Content.anchorsInside .Section > .Title > .Link { text-decoration: none; float: right; }
+
+.TemplateRegularMaterial > .Content.anchorsInside .Section > .Title > .Link:after { color: #D4D8DF; font-family: "Material Design Icons"; content: "\F0339"; }
+
+.TemplateRegularMaterial > .Content.anchorsInside .Section > .Title > .Link:after { position: relative; float: right; margin-left: 0; }
+
+.TemplateRegularMaterial > .Content a { color: #3f5e92; }
+
+.TemplateRegularMaterial > .Content a:visited { color: #5883cc; }
+
+.TemplateRegularMaterial > .Content .Header { margin-bottom: 4vh; padding-bottom: 1rem; border-bottom: 1px solid #ddd; }
+
+.TemplateRegularMaterial > .Content .Header .Title { text-align: left; letter-spacing: 0.4px; overflow: hidden; max-height: 20vh; line-height: 60px; font-weight: 600; font-size: 52px; color: #1b1e23; }
+
+.TemplateRegularMaterial > .Content .Section { margin-bottom: 30px; }
+
+.TemplateRegularMaterial > .Content .Section > .Title { font-weight: 400; font-size: 30px; line-height: 40px; color: #1B1E23; margin-bottom: 0.2rem; }
+
+.TemplateRegularMaterial > .Content .Section > .Section { margin-left: 20px; }
+
+.TemplateRegularMaterial > .Content .Section > .Section .Title { font-weight: 400; font-size: 1.6rem; }
+
+.TemplateRegularMaterial > .Content .Section > .Section > .Section > .Title { font-weight: 500; font-size: 1.4rem; color: #ccc; }
+
+.TemplateRegularMaterial > .Content .Header div.Image { display: block; width: 100%; height: 50vh; margin-bottom: 2vh; }
+
+.TemplateRegularMaterial > .Content .Section div.Image { display: block; width: 100%; height: 30vh; margin-bottom: 1vh; }
+
+.TemplateRegularMaterial > .Content img.Image { display: block; margin-left: auto; margin-right: auto; margin-bottom: 1.5vh; margin-top: 1.5vh; height: auto; width: 100%; }
+
+@media only screen and (max-width: 816px) { .TemplateRegularMaterial > .Content > .Header > .Text, .TemplateRegularMaterial > .Content > .Header > .Title, .TemplateRegularMaterial > .Content > .Section > .Text, .TemplateRegularMaterial > .Content > .Section > .Title { padding-left: 8px; padding-right: 8px; } }
+
+.TemplateRegularMaterial > .Content .Text b { font-weight: 500; color: #79be1e; text-align: left; }
+
+.TemplateLeftSideMenu .LeftSideContainer, .TemplateLanding .LeftSideContainer, .TemplateLeftSideMenu .RightSideContainer, .TemplateLanding .RightSideContainer, .TemplateRegularMaterial .LeftSideContainer, .TemplateRegularMaterial .RightSideContainer { display: flex; flex-direction: column; position: fixed; top: 0; height: 100vh; z-index: 1000; background-color: #3b424d; }
+
+.TemplateLeftSideMenu .Forward.LeftSideContainer, .TemplateLanding .Forward.LeftSideContainer, .TemplateLeftSideMenu .Forward.RightSideContainer, .TemplateLanding .Forward.RightSideContainer, .TemplateRegularMaterial .Forward.LeftSideContainer, .TemplateRegularMaterial .Forward.RightSideContainer { z-index: 1100; }
+
+.TemplateLeftSideMenu .LeftSideContainer > div, .TemplateLanding .LeftSideContainer > div, .TemplateLeftSideMenu .RightSideContainer > div, .TemplateLanding .RightSideContainer > div, .TemplateRegularMaterial .LeftSideContainer > div, .TemplateRegularMaterial .RightSideContainer > div { border-bottom: 2px solid #1B1E23; }
+
+.TemplateLeftSideMenu .LeftSideContainer > div:last-child, .TemplateLanding .LeftSideContainer > div:last-child, .TemplateLeftSideMenu .RightSideContainer > div:last-child, .TemplateLanding .RightSideContainer > div:last-child, .TemplateRegularMaterial .LeftSideContainer > div:last-child, .TemplateRegularMaterial .RightSideContainer > div:last-child { border-bottom: none; }
+
+.TemplateLeftSideMenu .LeftSideContainer, .TemplateLanding .LeftSideContainer, .TemplateRegularMaterial .LeftSideContainer { left: 0; }
+
+.TemplateLeftSideMenu .RightSideContainer, .TemplateLanding .RightSideContainer, .TemplateRegularMaterial .RightSideContainer { right: 0; }
+
+.TemplateLanding { /*> .VideoPlayer { max-height: 100%; }*/ }
+
+.TemplateLanding > .Content { min-width: 320px; margin: 0 auto 0 auto; flex: 1 0 auto; }
+
+.TemplateLanding > .Content .Section > .Title > .Link { visibility: hidden; }
+
+.TemplateLanding > .Content .Section > .Title { font-size: 2.5rem; font-weight: 700; text-align: left; color: #081a20; margin-bottom: 0.2rem; }
+
+.TemplateLanding > .Content .Section > .Section { margin-left: 20px; }
+
+.TemplateLanding > .Content .Section > .Section .Title { font-weight: 400; font-size: 1.5rem; color: #081a20; }
+
+.TemplateLanding > .Content .Section > .Section > .Section > .Title { font-weight: 500; font-size: 1.4rem; color: #081a20; }
+
+.TemplateLanding > .Content i { font-variant: italic; }
+
+.TemplateLanding > .Content *[style*="display:block"]:not(:last-child) { margin-bottom: 0.4rem; }
+
+.TemplateLanding > .Content .Header > div.Image { display: block; width: 100%; height: 50vh; margin-bottom: 2vh; }
+
+.TemplateLanding > .Content .Section > div.Image { display: block; width: 100%; height: 30vh; margin-bottom: 1vh; }
+
+.TemplateLanding > .Content img.Image { display: block; margin-left: auto; margin-right: auto; height: auto; width: 100%; }
+
+@media only screen and (max-width: 816px) { .TemplateLanding > .Content > .Header > .Text, .TemplateLanding > .Content > .Header > .Title, .TemplateLanding > .Content > .Section > .Text, .TemplateLanding > .Content > .Section > .Title { padding-left: 8px; padding-right: 8px; } }
+
+.TemplateRegularMaterial, .TemplateLanding { height: 100%; }
+
+.TemplateRegularMaterial .Content, .TemplateLanding .Content { box-sizing: border-box; min-height: 100%; padding-bottom: 90px; }
+
+.TemplateRegularMaterial.Shadowed, .TemplateLanding.Shadowed { overflow: hidden; }
+
+.TemplateRegularMaterial.Shadowed:before, .TemplateLanding.Shadowed:before { overflow: auto; position: fixed; left: 0%; height: 100%; width: 100%; z-index: 20; background-color: rgba(133, 133, 133, 0.8); content: ""; }
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { font-family: sans-serif; line-height: 1.5; height: 100%; -webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+body { margin: 0; font-family: "Roboto"; font-size: 1rem; font-weight: 400; line-height: 1.5; color: #212529; text-align: left; background-color: #ffffff; overflow-x: hidden; min-height: 100vh; }
+
+/*# sourceMappingURL=Style.css.map */

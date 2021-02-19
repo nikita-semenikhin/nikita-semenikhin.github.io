@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+	<url>
+	<loc>https://nikita-semenikhin.github.io/Index_en.html</loc>
+		<xhtml:link rel="alternate" hreflang="en" href="https://nikita-semenikhin.github.io/Index_en.html"/>
+	</url>
+	<url>
+	<loc>https://nikita-semenikhin.github.io/Csml/CsmlPredefined/NoTarget_en.html</loc>
+		<xhtml:link rel="alternate" hreflang="en" href="https://nikita-semenikhin.github.io/Csml/CsmlPredefined/NoTarget_en.html"/>
+	</url>
+	<url>
+	<loc>https://nikita-semenikhin.github.io/Csml/CsmlPredefined/NoTarget_ru_en.html</loc>
+		<xhtml:link rel="alternate" hreflang="en" href="https://nikita-semenikhin.github.io/Csml/CsmlPredefined/NoTarget_ru_en.html"/>
+	</url>
+	<url>
+	<loc>https://nikita-semenikhin.github.io/Csml/CsmlPredefined/Diagnostics_en.html</loc>
+		<xhtml:link rel="alternate" hreflang="en" href="https://nikita-semenikhin.github.io/Csml/CsmlPredefined/Diagnostics_en.html"/>
+	</url>
+</urlset>
